@@ -1,0 +1,131 @@
+:root{/*Declaraciion de colores*/
+    --primario: #d676f4;
+    --primarioOscuro: #7f428b;
+    --secundario: #ffce00;
+    --secundarioOscuro:#rgb(233,187,2);
+    --blanco: #fff;
+    --negro: #000;
+    --fuente-principal: "Staatliches",cursive;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62%;
+}
+
+/**,*:before,*:after{
+    box-sizing: inherit;
+}*/
+/*Globales*/
+body{
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+}
+a{
+    text-decoration: none;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin:0 auto;
+}
+h1,h2,h3{
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuente-principal);
+}
+
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+/*Header*/
+.header{
+    width: 100%;
+    display: flex;
+    height: 170px;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: var(--blanco);
+}
+.contenedor-logo{
+    width: 40%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.header-logo{
+    max-width: 200px;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.contenedor-nombre{
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-nombre{
+    font-size: 50px;
+    margin: 0;
+    letter-spacing: 5px;
+}
+.navegacion{
+    background-color: var(--primarioOscuro);
+    padding: 1rem,0;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+.navegacion-enlace{
+    font-family: var(--fuente-principal);
+    color: var(--blanco);
+    font-size: 3rem;
+}
+.navegacion-enlace:hover{
+    color: var(--secundario);
+}
+
+/*Estilos para contenedor de productos*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+@media(max-width: 780px) {
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/*Estilos para los productos*/
+.producto{
+    background-color: var(--primarioOscuro);
+    padding: 1rem;
+    text-align: center;
+}
+.producto-precio{
+    font-size: 4rem;
+}
+.producto-nombre, .producto-precio{
+    font-family: var(--fuente-principal);
+    margin: 1rem,0;
+    text-align: center;
+    line-height: 1.2;
+}
+.producto-imagen{
+    width: 90%;
+}
+.producto-imagen:hover{
+    width: 100%;
+}
+
