@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/stylesProducto.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap">
+    <title>Gorra Harry Potter</title>
 </head>
 <body>
-    <h1>Pagina de producto 1</h1>
+    <header>
+        <header class="header">
+            <div class="contenedor-logo">
+                <a href="../index.html">
+                    <img class="header-logo" src="../img/logo.jpg" alt="logotipo">
+                </a>
+            </div>
+            <a class="contenedor-nombre" href="../index.html">
+                <h1 class="header-nombre">Gorras insanas</h1>
+            </a>
+        </header>
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion-enlace" href="../index.html">Tienda</a>
+        <a class="navegacion-enlace" href="nosotros.html">Sobre nosotros</a>
+    </nav>
+    <main class="contenedor">
+        <div class="gorra">
+            <img class="imagen-producto" src="../img/1.jpg" alt="">
+            <div class="gorra_contenido">
+                <h1 class="titulo-gorra">Gorra de Harry Potter</h1>
+                <p class="text-gorra">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur ex ad eos perferendis molestias facilis quaerat cum sit fugiat aut, eaque, architecto, unde fugit esse expedita incidunt! Veritatis, rem vel?
+                </p>
+                <form action="" class="formulario">
+                    <select name="" id="" class="formulario-campo">
+                        <option disabled value="">-- Seleccionar color ---</option>
+                        <option value="">Negro</option>
+                        <option value="">Blanco</option>
+                        <option value="">Azul</option>
+                    </select>
+                    <!--Input cantidad-->
+                    <input type="number" 
+                    class="formulario-campo"
+                    placeholder="Cantidad"
+                    min="1">
+                    <!--Agregar al carrito-->
+                    <input type="submit" 
+                    class="formulario-submit"
+                    value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer-texto">
+            Gorras insanas - Todos los derechos reservados 2024
+        </p>
+    </footer>
 </body>
 </html>

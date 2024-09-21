@@ -1,0 +1,62 @@
+@media(min-width:768px){
+    .gorra{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+        align-items: center;
+    }
+}
+
+
+.titulo-gorra{
+    text-shadow: 3px 5px 5px var(--negro);
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+.text-gorra{
+    color: var(--negro);
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.imagen-producto{
+    width: 90%;
+    border: 2px solid var(--negro);
+    border-radius: 15px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.formulario-campo{
+    border: 1px solid var(--primarioOscuro);
+    background-color: var(--secundario);
+    color: var(--negro);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    appearance: none;
+}
+
+.formulario-submit{
+    background-color: var(--secundario);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--fuente-principal);
+    padding: 2rem;
+    transition: backgoround-color 0.3s ease;
+    grid-column: 1/3;
+    border-radius: 15px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.formulario-submit:hover{
+    cursor: pointer;
+    background-color: var(--primarioOscuro);
+}
